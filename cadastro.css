@@ -1,0 +1,43 @@
+h1 {
+	text-align: center;
+	color: #FFB6C1;
+}
+
+h2 {
+	text-align: center;
+	color: #8B7D7B;
+}
+
+.formulario {
+	position: relative;
+    background-color: #FFFAFA;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.table {
+	background-color:#F8F8FF;
+	margin:auto;
+}
+
+.bt {
+	width: 884px;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.corpo {
+	background-color:#FFFAFA;
+}
+
+.nav{
+	padding: 14px 16px;
+  background-color: #FBF2EF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+/* .navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+} */

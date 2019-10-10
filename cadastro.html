@@ -1,0 +1,58 @@
+<?php
+	session_start();
+?>
+
+<html lang="pt-br">
+	<head>
+		<title> Cadastro de contatos - Sistema de agenda </title>
+		<link rel="stylesheet" type="text/css" href="cadastro.css">
+		<meta charset="utf-8">
+		<script>
+			function funcaoVoltar() {
+				var  msg;
+				var r = confirm ("Você quer mesmo sair?");
+				if (r == true) {
+				window.location.href="index.php";
+				} else {
+				window.location.href="";
+				}
+			}
+			</script> 
+	</head>
+	<body>
+		<nav>
+			<div class="nav">
+					<a href="index.php" onclick="funcaoVoltar()">Sair</a>
+				<!-- <button><a href="index.php">Sair</a></button> -->
+			</div>
+		</nav>
+		<em><h1> Sistema de agenda </h1></em> 
+		    <br><br>
+		    <div class="corpo">
+				<br>
+					<em><h2> Cadastro de contato </h2></em>
+					<div>
+						<br>
+						<div class="formulario">
+							<form action="./bd.php" method="post" id="cadastro">
+								<label> Nome: </label>
+								<input type="text" name="nome" placeholder="Seu nome" required />
+								<br><br>
+								<label> Endereço: </label>
+								<input type="text" name="endereco" placeholder="Seu endereco" required />
+								<br><br>
+								<label> Telefone:</label>
+								<input type="number" name="telefone" placeholder="Seu telefone" required />
+								<br><br>
+								<label> Email:</label>
+								<input type="email" name="email" placeholder="Seu email" required />
+								<br><br>
+								<input type="submit" value="Enviar">
+								<button><a href="exibe.php">Ver contatos cadastrados</a></button>
+								<!-- <button><a href="delete.php"> Limpar dados </a></button> -->
+							</form>
+						</div>
+					</div>
+			</div>
+	</body>	
+</html>

@@ -1,6 +1,6 @@
 <?php
 
-	$connect = mysqli_connect("localhost", "root", "rootroot", "sistema_agendas") or die ("Não foi possível conectar".mysqli_connect_error());
+	$connect = mysqli_connect("localhost", "user", "password", "databasename") or die ("Não foi possível conectar".mysqli_connect_error());
 
 
 	$query = "INSERT INTO usuarios (login, senha) VALUES ('$_POST[login]', '$_POST[senha]')";

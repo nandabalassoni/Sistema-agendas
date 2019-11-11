@@ -2,7 +2,7 @@
 
 // FAZENDO A LIGAÇÃO COM O BANCO DE DADOS. SE TIVER ALGUM ERRO DE CONEXÃO APARECE A MENSAGEM "NÃO FOI POSSÍVEL CONECTAR"
   
-  $connect = mysqli_connect("localhost", "root", "rootroot", "sistema_agendas") or die ("Não foi possível conectar".mysqli_connect_error());
+  $connect = mysqli_connect("localhost", "user", "password", "databasename") or die ("Não foi possível conectar".mysqli_connect_error());
 
 //INSERE DADOS NO BANCO E VALIDA SE FORAM INSERIDOS CORRETAMENTE
 
